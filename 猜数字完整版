@@ -1,0 +1,53 @@
+package xulong;
+
+import java.util.Random;
+import java.util.Scanner;
+public class Xulong {
+
+	public static void main(String[] args) {
+		Scanner scanner =new Scanner(System.in);
+		Random random= new Random();
+		int data[]=new int[10];
+		boolean st[]=new boolean[10];
+		System.out.println("输入难度：1.简单          2.中等             3.困难");
+		int chance=scanner.nextInt();
+		if(chance==1)
+			chance=12;
+		else if(chance==2)
+			chance=9;
+		else 
+			chance=7;
+		for(int i=0;i<4;i++)
+		{
+			data[i]=random.nextInt(10);
+			while(st[data[i]])
+				data[i]=random.nextInt(10);
+			st[data[i]]=true;
+		}
+		for(int i=0;i<4;i++)
+			System.out.println(data[i]);
+		int x,cnt=0;
+		while(cnt!=4&&chance!=0)
+		{
+			chance--;
+			for(int i=0;i<4;i++)
+			{
+				x=scanner.nextInt();
+				if(st[x])
+					cnt++;
+			}
+			if(cnt==4)
+			{
+				System.out.println("全猜对了！");
+				break;
+			}
+			else
+			{
+				System.out.println("请继续猜！");
+				System.out.println(cnt+"a"+(4-cnt)+"b");
+				cnt=0;
+			}
+		}
+	}
+
+}
