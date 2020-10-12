@@ -1,0 +1,34 @@
+# java
+package 虚隆;
+
+import java.sql.Array;
+import java.util.ArrayList;
+
+public class Stu
+{
+		String name,num;
+		int age;
+		
+		ArrayList Courses=new ArrayList();
+		
+		void disp()
+		{
+			System.out.println("姓名：       "+name);
+			System.out.println("学号：       "+num);
+			System.out.println("年龄：       "+age);
+			System.out.print("选课：       ");
+			for(Object course: Courses)
+				System.out.print(course+"\t");
+			System.out.println("");
+		}
+		
+		void addcourse(String course)
+		{
+			Courses.add(course);
+		}
+		
+		void removecourse(String course)
+		{
+			Courses.remove(course);
+		}
+}
