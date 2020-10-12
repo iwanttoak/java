@@ -1,0 +1,14 @@
+# java
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		Stu xulong = new Stu();
+		xulong.name="一步虚隆";
+		xulong.num="N0000000001";
+		xulong.age=38;
+		xulong.disp();
+		xulong.addcourse("Python");
+		xulong.addcourse("Java");
+		xulong.disp();
+		xulong.removecourse("Java");
+		xulong.disp();
+	}
