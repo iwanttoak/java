@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+
+public class TeaTest {
+
+	public static void main(String[] args) 
+	{
+		Scanner scanner =new Scanner(System.in);
+		Tea xulong = new Tea();
+		System.out.println("输入姓名:");
+		xulong.name=scanner.next();
+		System.out.println("输入年龄:");
+		int x=scanner.nextInt();
+//		while(true)
+//			if(x>=22)
+//			{
+//				xulong.age=x;
+//				break;
+//			}
+//			else 
+//			{
+//				System.out.println("年龄不符");
+//				x=scanner.nextInt();
+//			}
+		if(x<22)
+			x=22;
+		xulong.setAge(x);
+		xulong.disp();
+		
+	}
+
+}
