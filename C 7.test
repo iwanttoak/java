@@ -1,0 +1,14 @@
+package 虚隆;
+
+public class TeaTest {
+
+	public static void main(String[] args) {
+		Tea ccc=new Tea();
+		ccc.SetName("虚隆");
+		ccc.SetNum(30);
+		ccc.SetXl("博士");
+		ccc.SetZw("老大");
+		ccc.Showinfo();
+	}
+
+}
