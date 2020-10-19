@@ -1,0 +1,52 @@
+package 虚隆;
+
+public class Tea
+{
+	private String name,zw,xl;
+	private int num;
+	void SetName(String x)
+	{
+		name=x;
+	}
+	
+	void SetZw(String x)
+	{
+		zw=x;
+	}
+	
+	void SetXl(String x)
+	{
+		xl=x;
+	}
+	void SetNum(int x)
+	{
+		num=x;
+	}
+	
+	String GetName()
+	{
+		return name;
+	}
+	
+	String GetZw()
+	{
+		return zw;
+	}
+	
+	String GetXl()
+	{
+		return xl;
+	}
+	
+	int Getnum()
+	{
+		return num;
+	}
+	void Showinfo()
+	{
+		System.out.println("姓名："+name);
+		System.out.println("年龄："+num);
+		System.out.println("学历："+xl);
+		System.out.println("职位："+zw+'\n');
+	}
+}
