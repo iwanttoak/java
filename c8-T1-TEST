@@ -1,0 +1,13 @@
+
+public class Xulongtest {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存
+		Xulong cc=new Xulong("cc", 11);
+		Xulong bb=new Xulong("bb", "bbbbb", 2222);
+		cc.setPage(22);
+		cc.Showinfo();
+		bb.Showinfo();
+	}
+
+}
