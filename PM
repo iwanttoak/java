@@ -1,0 +1,27 @@
+
+public class PM extends Employee
+{
+	int exp ,bonus;
+
+	public int getExp() {
+		return exp;
+	}
+
+	public void setExp(int exp) {
+		this.exp = exp;
+	}
+
+	public int getBonus() {
+		return bonus;
+	}
+
+	public void setBonus(int bonus) {
+		this.bonus = bonus;
+	}
+	
+	void showPM()
+	{
+		System.out.println("项目经验：                    "+exp);
+		System.out.println("项目分红：                    "+bonus);
+	}
+}
