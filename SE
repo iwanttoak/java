@@ -1,0 +1,18 @@
+
+public class SE extends Employee
+{
+	int grade;
+	
+	public int getGrade() {
+		return grade;
+	}
+
+	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+
+	void showSE()
+	{
+		System.out.println("级别：                 "+grade);
+	}
+}
